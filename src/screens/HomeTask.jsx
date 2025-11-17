@@ -10,12 +10,12 @@ export default function Home() {
   const handleTaskClick = () => {
     if (secureCode === '') {
       //alert('กรุณาใส่ Secure Code')
-      Swal.fire ({
-        icon:'warning',
-        iconColor: '#F59B00'
-        confirmButtomcontext : 'ตกลง',
-      confirmButtonColor: '#00495F5'    
-     })
+    Swal.fire ({
+      icon:'warning',
+      iconColor: '#F59B00',
+      confirmButtonText: 'ตกลง',
+      confirmButtonColor: '#00495F5'  
+    })
       return;
     }
 
